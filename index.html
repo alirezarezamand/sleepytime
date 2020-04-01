@@ -1,0 +1,100 @@
+<html lang=fa>
+<head>
+<meta charset=utf-8><title>sleepyti.ir محاسبه زمان خواب</title>
+<meta name="msvalidate.01" content="5A4833F66470C0DD01809A6A2674D719" />
+<meta name=description content="Sleepyti.ir , sleepyti.me ماشین حساب خواب یا محاسبه گر زمان خواب به شما کمک می کند تا بهترین زمان خوابیدن مطابق با زمان بیدار شدن تان را بیابید."><meta name=author content="Alireza Rezamand"><meta name=viewport content="width=device-width, initial-scale=1">
+<link rel=stylesheet href="assets/css/normalize.css"><link rel=stylesheet href="assets/css/skeleton.css"><script src="assets/js/jquery.min.js"></script><link rel=apple-touch-icon sizes=57x57 href="assets/img/apple-icon-57x57.png">
+<link rel=apple-touch-icon sizes=60x60 href="assets/img/apple-icon-60x60.png">
+<link rel=apple-touch-icon sizes=72x72 href="assets/img/apple-icon-72x72.png"><link rel=apple-touch-icon sizes=76x76 href="assets/img/apple-icon-76x76.png">
+<link rel=apple-touch-icon sizes=114x114 href="assets/img/apple-icon-114x114.png"><link rel=apple-touch-icon sizes=120x120 href="assets/img/apple-icon-120x120.png">
+<link rel=apple-touch-icon sizes=144x144 href="assets/img/apple-icon-144x144.png">
+<link rel=apple-touch-icon sizes=152x152 href="assets/img/apple-icon-152x152.png">
+<link rel=apple-touch-icon sizes=180x180 href="assets/img/apple-icon-180x180.png">
+<link rel=icon type="image/png" sizes=192x192 href="assets/img/android-icon-192x192.png">
+<link rel=icon type="image/png" sizes=32x32 href="assets/img/favicon-32x32.png">
+<link rel=icon type="image/png" sizes=96x96 href="assets/img/favicon-96x96.png">
+<link rel=icon type="image/png" sizes=16x16 href="assets/img/favicon-16x16.png">
+<link rel=manifest href="/manifest.json"><meta name=msapplication-TileColor content="#001f3f">
+<meta name=msapplication-TileImage content="assets/img/ms-icon-144x144.png">
+<meta name=theme-color content="#001f3f">
+<script>$(document).ready(function(){$('#ad').fadeOut(1);$('.back').click(function(){window.location="http://sleepyti.ir/";});$('#calculate').click(function(){if($('#hour').val()!='(ساعت)'&&$('#minute').val()!='(دقیقه)'){$('#start').hide();var setTime=new Date();if($('#hour').val()==12){$('#hour').val(0);}
+if($('#ampm').val()=="AM"){setTime.setHours($('#hour').val());}
+else if($('#ampm').val()=="PM"){setTime.setHours(+$('#hour').val()+12);}
+setTime.setMinutes($('#minute').val());var res1=new Date(setTime.getTime()-270*60000);var res2=new Date(res1.getTime()-90*60000);var res3=new Date(res2.getTime()-90*60000);var res4=new Date(res3.getTime()-90*60000);function retDate(dateObj){var formatted='';var pm=false;if(dateObj.getHours()>12){formatted=dateObj.getHours()-12;pm=true;}else if(dateObj.getHours()<12&&dateObj.getHours()!=0){formatted=dateObj.getHours();}else if(dateObj.getHours()==0){formatted="12";}else if(dateObj.getHours()==12){formatted="12";pm=true;}
+if(dateObj.getMinutes()<10){formatted=formatted+":0"+dateObj.getMinutes();}else{formatted=formatted+":"+dateObj.getMinutes();}
+if(pm==true){formatted=formatted+" PM";}else{formatted=formatted+" AM";}
+return formatted;}
+$('#result4').html(String(retDate(res1)));$('#result3').html(String(retDate(res2)));$('#result2').html(String(retDate(res3)));$('#result1').html(String(retDate(res4)));$('#results').fadeIn();$('#feedback').fadeIn();$('#ad').fadeIn();}
+else{alert("لطفا قبل از محاسبه زمان خواب, ساعت و دقیقه را انتخاب کنید!");}});$('#zzz').click(function(){$('#start').hide();var zDate=new Date();var res1=new Date(zDate.getTime()+104*60000);var res2=new Date(res1.getTime()+90*60000);var res3=new Date(res2.getTime()+90*60000);var res4=new Date(res3.getTime()+90*60000);var res5=new Date(res4.getTime()+90*60000);var res6=new Date(res5.getTime()+90*60000);function retDate(dateObj){var formatted='';var pm=false;if(dateObj.getHours()>12){formatted=dateObj.getHours()-12;pm=true;}else if(dateObj.getHours()<12&&dateObj.getHours()!=0){formatted=dateObj.getHours();}else if(dateObj.getHours()==0){formatted="12";}else if(dateObj.getHours()==12){formatted="12";pm=true;}
+if(dateObj.getMinutes()<10){formatted=formatted+":0"+dateObj.getMinutes();}else{formatted=formatted+":"+dateObj.getMinutes();}
+if(pm==true){formatted=formatted+" PM";}else{formatted=formatted+" AM";}
+return formatted;}
+$('#resultNow1').html(String(retDate(res1)));$('#resultNow2').html(String(retDate(res2)));$('#resultNow3').html(String(retDate(res3)));$('#resultNow4').html(String(retDate(res4)));$('#resultNow5').html(String(retDate(res5)));$('#resultNow6').html(String(retDate(res6)));$('#resultsNow').fadeIn();$('#feedback').fadeIn();$('#ad').fadeIn();});});</script>
+<script type="text/javascript">var popupplus_user_id=2984;</script>
+<script type="text/javascript" src=popup.js></script>
+</head>
+<body style="font-family:IRANSans!important;" dir=rtl>
+<div class=container id=content>
+<div class=row>
+<div class="twelve columns">
+<h2 style="text-align:center;margin-top:10px;">sleepyti.ir</h2>
+<div id=start><p><span style="font-size:125%;">لطفا زمان بیدار شدنتان را انتخاب کنید...</span><br/><div style="text-align: center;"><select id=hour style="background-color:#001f3f;"><option>(ساعت)</option><option>1</option><option>2</option>
+<option>3</option><option>4</option>
+<option>5</option>
+<option>6</option><option>7</option>
+<option>8</option>
+<option>9</option><option>10</option>
+<option>11</option>
+<option>12</option></select>
+<select id=minute style="background-color:#001f3f;">
+<option>(دقیقه)</option>
+<option>00</option>
+<option>05</option>
+<option>10</option>
+<option>15</option>
+<option>20</option><option>25</option>
+<option>30</option>
+<option>35</option>
+<option>40</option>
+<option>45</option>
+<option>50</option>
+<option>55</option>
+</select>
+<select id=ampm style="background-color:#001f3f;"><option>AM</option><option>PM</option>
+</select>
+<br/>
+<button id=calculate>محاسبه</button>
+</p>
+</div><p style="text-align:center; font-size:125%;"><i>یا</i></p><p><span style="font-size:125%;">درصورتی که الان می خواهید بخوابید با استفاده از دکمه زیر چرخه خواب خود را ببینید</span></p><center>
+<button id=zzz>zzz</button><br/><br/><br/><br/><br/>
+</center>
+</div><div id=results style="display:none;"><p style="font-size: 150%">شما باید سعی کنید در یکی از زمان های زیر <b>بخوابید</b>:</p>
+<span id=result1 style="font-size:300%;color:rgb(1,223,116);" title="شش چرخه: نُه ساعت خواب"></span> <i style="font-size:200%;">یا </i> <span id=result2 style="font-size:300%;color:rgb(1,223,116);" title="پنج چرخه: هفت و نیم ساعت خواب"></span> <i style="font-size: 200%;">یا </i>
+<span id=result3 style="font-size:300%;color:rgb(1,223,116);" title="چهار چرخه: شش ساعت خواب"></span> <i style="font-size: 200%;">یا </i>
+<span id=result4 style="font-size:300%;color:rgb(1,223,116);" title="سه چرخه: چهار ساعت و نیم ساعت خواب"></span>
+<p style="margin-top: 1em; font-size:150%;color:rgb(0,128,255);">لطفا توجه داشته باشید که ساعت <b>خوابیدن</b> شما باید در این زمانها باشد.</p>
+<p style="font-size:150%;color:rgb(0,128,255);">به طور میانگین <b>چهارده دقیقه</b> طول می کشد تا انسان ها بخوابند, بنابر این برنامه ریزی کنید!</p>
+<p style="font-size:150%;color:rgb(153,102,204);">sleepyti.ir با شمارش وارونه <b>چرخه خواب</b> کار می کند. بیدار شدن در وسط یک چرخه خواب باعث ایجاد خستگی, ضعف و بیحالی در شما می شود, اما بیدار شدن <i>در بین</i> چرخه های پیشنهادی ما باعث تجدید قوا و احساس شادابی در شما می شود!</p><center><a class=back href="#" style="font-size: 200%;">برگشت</a><br/>
+</center>
+</div>
+<div id=resultsNow style="display:none;">
+<p style="font-size: 150%">به طور میانگین <b>چهارده دقیقه</b> طول می کشد تا انسان بخوابد.</p>
+<p style="font-size:150%">اگر شما الان بخوابید, باید سعی کنید در یکی از زمان های زیر بیدار شوید:</p><p style=direction:ltr><span id=resultNow1 style="font-size:300%;color:rgb(168,39,254);" title="یک چرخه: یک و نیم ساعت خواب"></span> <i style="font-size: 150%;">&nbsp;یا </i>
+<span id=resultNow2 style="font-size:300%;color:rgb(154,3,254);" title="دو چرخه: سه ساعت خواب"></span> <i style="font-size:150%;">&nbsp;یا </i>
+<span id=resultNow3 style="font-size:300%; color:rgb(150,105,254);" title="سه چرخه: چهار ساعت و نیم ساعت خواب"></span> <i style="font-size:150%;">&nbsp;یا </i><span id=resultNow4 style="font-size:300%;color:rgb(140,140,255);" title="چهار چرخه: شش ساعت خواب"></span> <i style="font-size:150%;">&nbsp;یا </i>
+<span id=resultNow5 style="font-size:300%;color:rgb(187,187,255);" title="پنج چرخه: هفت و نیم ساعت خواب"></span> <i style="font-size:150%;">&nbsp;یا </i>
+<span id=resultNow6 style="font-size:300%; color:rgb(143,254,221);" title="شش چرخه: نُه ساعت خواب"></span></p><p style="margin-top:1em;font-size:150%;color:rgb(0,128,255);">یک خواب شبانه خوب شامل 5-6 چرخه خواب کامل است.</p><center><a class=back href="#" style="font-size: 200%;">بازگشت</a><br/>
+</center></div>
+</div>
+</div>
+<div class=row>
+<div class="twelve columns" id=ad><center><script type="text/javascript" src="//mavq.net/4ec970c9e1/1ffdd2e8f3/?placementName=sleepyti&width=300&height=250"></script></center></div>
+</div>
+<div class=row>
+<div class="twelve columns"><br>
+<p style="text-align:center;display:none;" id=feedback>تمامی حقوق برای <a href="https://sleepyti.ir" title="محاسبه زمان خواب و بیداری">اسلیپی تایم</a> قدرت گرفته از <a target=_blank href="https://simikalon.design" title="طراحی و اجرا توسط سیمیکالن">سیمیکالن</a> محفوظ است. <a href="mailto:info@sleepyti.ir">ارسال بازخورد</a><br/><br/>اگر شما زمان خوابتان را می دانید, اما زمان بیدار شدنتان را نمی دانید, <a href="https://sleepyti.ir/wake">این</a> را امتحان کنید.</p>
+</div></div>
+</div>
+<script type="text/javascript">var popupplus_user_id = 2984;</script><script type="text/javascript" src="https://counter.popupplus.ir/"></script><div style="display:none;"><h1>محاسبه زمان خواب</h1><h1>محاسبه زمان بیداری</h1><h2>اسلیپ تایم</h2><h2>اسلیپی تی</h2><h3>کی بخوابم؟</h3><h3>آموزش خوب خوابیدن</h3><h4>خواب آرام</h4><h5>تنظیم چرخه خواب بدن</h5><a <a href="https://bigdump.ir">کانفیگ رایگان سرور مجازی</a><br>
+<a href="https://deltaseda.co">آهنگ جدید</a><br><a href="https://deltaseda.ir">دانلود آهنگ جدید</a><br><a href="https://deltaseda.com">آهنگ جدید</a><br><a href="https://simikalon.dev">سمی کالن</a><br><a href="https://deltaseda.us">آهنگ جدید</a><br><a href="https://simikalon.dev/mag/">سیمیکالن مگ</a><br><a href="https://www.abanroid.ir">دانلود بازی و برنامه اندروید</a><br><a href="http://www.rmsft.ir">رضامند سافت ویر</a><br><a href="https://www.sarabmusic.ir">سراب موزیک</a><br><a href="https://simikalon.ir">سیمی کالن</a><br><a href="https://dilino.ir">دیلینو</a><br><a href="https://sleepyti.ir">محاسبه گر زمان خواب و بیداری</a><br><a href="https://alirezarezamand.ir">علیرضا رضامند</a><br><a href="https://fastc.ir">ماشین حساب سریع</a><br><a href="https://colorify.ir">رنگ آمیزی</a></div></body>
+</html>
